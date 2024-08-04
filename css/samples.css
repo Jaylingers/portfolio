@@ -1,0 +1,79 @@
+/* Centering DIV: max-width: 1566px; margin: 0 auto;*/
+
+/*-----------   BODY   -------------*/
+body {margin: 0;padding: 0;background: #512da8;}
+
+/*-----------   WELCOME   -------------*/
+.welcome {background: #262b66;overflow: hidden;-webkit-font-smoothing: antialiased;}
+.welcome h2 {color: #faf7f7;font-family: monospace;font-weight: 300;font-size: 1.248rem;margin-top: 2em;font-family: "Courier New", Courier, monospace;opacity: 0;animation: moveIn 2s 3.1s ease forwards;}
+.welcome h3 {color: #faf7f7;font-family: monospace;font-weight: 300;font-size: 1.248rem;margin-top: 0em;font-family: "Courier New", Courier, monospace;opacity: 0;animation: moveIn 2s 3.1s ease forwards;border-left: 6px solid #F44336;padding-left: 2em;height: 2em;display: grid;align-items: center;}
+.welcome h1 {color: white;font-size: 2.5em;margin-top: 1em;opacity: 0;animation: moveIn 2s 3.1s ease forwards;margin-block-end: 0em;font-family: 'Architects Daughter', cursive;text-transform: uppercase;font-weight: 900;text-align:center;}
+.welcome .splash {height: 0px;padding: 0px;border: 130em solid #039be5;position: fixed;left: 50%;top: 100%;display: block;box-sizing: initial;overflow: hidden;border-radius: 50%;transform: translate(-50%, -50%);animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;}
+.welcome #welcome {background: #311b92 ;width: 56px;height: 56px;position: absolute;left: 50%;top: 50%;overflow: hidden;opacity: 0;transform: translate(-50%, -50%);border-radius: 50%;animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards, hide 2s 2.9s ease forwards;}
+/* moveIn */
+.welcome_header,.welcome_content,.welcome_footer,button,.welcome a.btn {opacity: 0;animation: moveIn 2s 3.1s ease forwards;}
+button {opacity: 0;animation: moveInbutton 2s 3.1s ease forwards;}
+@keyframes init {0% {width: 0px;height: 0px;} 100% {width: 56px;height: 56px;margin-top: 0px;opacity: 1;}}
+@keyframes puff {0% {top: 100%;height: 0px;padding: 0px;} 100% {top: 50%;height: 100%;padding: 0px 100%;}}
+@keyframes borderRadius {0% {border-radius: 50%;} 100% {border-radius: 0px;}}
+@keyframes moveDown {0% {top: 50%;}50% {top: 40%;} 100% {top: 100%;}}
+@keyframes moveUp {0% {background: #311b92;top: 100%;} 50% {top: 40%;} 100% {top: 50%;background: #039be5;}}
+@keyframes materia {0% {background: #039be5;} 50% {background: #039be5;top: 26px;} 100% {background: #311b92;width: 100%;height: 64px;border-radius: 0px;top: 26px;}}
+@keyframes moveIn {0% {opacity: 0;} 100% {opacity: 1;}}
+@keyframes moveInbutton {0% {opacity: 0;} 100% {opacity: 0.8;}}
+@keyframes hide {0% {opacity: 1;} 100% {opacity: 0;}} 
+
+/*-----------   WELCOME HEADER   -------------*/
+.welcome_header {height: 3.5em;background-color: #4920ac;box-shadow: 0 1px 11px 0 rgba(0, 0, 0, 0.24);width: 100%;display: grid;align-items: center;justify-content: flex-end;color: white;z-index: 6;}
+.welcome_header ul {padding-right: 2em;font-size: 13px;}
+.welcome_header ul li i {font-size: 2em;margin-left: 0.5em;cursor: pointer;}
+.welcome_header ul li {display: inline-block;}
+
+/*-----------   WELCOME CONTENT   -------------*/
+.welcome_content {width: 100%; position: relative;height: 100%;}
+.welcome_content hr {width: 40%;background-color: white;}
+.welcome_content .desk {width: 100%;display: flex;justify-content: center;align-items: center;}
+.welcome_content .desk p {margin-block-start: 0.3em;margin-block-end: 0em;margin-inline-start: 0px;margin-inline-end: 0px;font-size: 15px;}
+.welcome_content .desk i {color: yellow;}
+
+  /*-----------   BODY CONTENT   -------------*/
+.body_content {height: 100%;margin-top: 5em;}
+
+  /*-----------   BODY DIV   -------------*/
+.body_content .body_div {max-width: 1266px;margin: 0 auto;height: 68%;margin-bottom: 5%;width: 100%;display: grid;gap: 5em;grid-template-columns: 22% 38% auto;border: 0px solid red;}
+.body_content .body_div div{border: 0px solid blue;}
+.welcome_content img {width: 20em;height: 22em;opacity: 0.8;border: 5px solid black;box-shadow: 0 1px 11px 0 rgba(0, 0, 0, 0.24);}
+.welcome_content .body_content .body_div .left {font-size: 20px;font-weight: bolder;}
+.welcome_content .body_content .body_div .left p {margin-block-start: 2px;margin-block-end: 0em;margin-inline-start: 0px;margin-inline-end: 0px;font-size: 13px;color: gray;font-weight: normal;}
+.welcome_content .body_content .body_div .left .about {margin-block-start: 24px;border-bottom: 1px solid #6a6b8a;height: 1.4em;width: 36%;color: #a26cf3;font-size: 15px;margin-bottom: 0.5em;}
+.welcome_content .body_content .body_div .center .personality {margin-block-start: 24px;border-bottom: 1px solid #6a6b8a;height: 1.4em;width: 36%;color: #a26cf3;font-size: 15px;margin-bottom: 0.5em;margin-top: 4.3em;}
+.welcome_content .body_content .body_div .center .viewportfolio {margin-block-start: 24px;height: 1.2em;color: white;font-size: 15px;margin-bottom: 0.5em;margin-top: 1.4em;border-bottom: 3px solid #55c530; float: right;}
+.welcome_content .body_content .body_div .center .viewportfolio:hover {cursor: pointer;border-bottom: 3px solid #6a6b8a;}
+.welcome_content .body_content .body_div .center p {margin-block-start: 2px;margin-block-end: 0em;margin-inline-start: 0px;margin-inline-end: 0px;font-size: 13px;color: gray;font-weight: normal;color: white;}
+.welcome_content .body_content .body_div .center label {text-decoration: underline;margin-top: 2em;}
+.welcome_content .body_content .body_div .left .details {color: white;}
+.welcome_content button {height: 4em;width: 15%;margin-left: 43%;background-color: rgb(21 176 167);box-shadow: none;outline: none;border: none;cursor: pointer;color: white;z-index: 1;}
+.welcome_content button:hover {opacity: 1 !important;}
+
+.loadskills {height: 1em !important;font-size: 8px;display: flex;justify-content: flex-end;align-items: center;text-align: right;border-bottom-left-radius: 1em;border-top-left-radius: 1em;}
+.loadcontainer {width: 100%;background-color: #3f4276;border-radius: 1em;}
+.sql {width: 50%; background-color: #808080;  animation: sql_bounce 35.5s;}
+.cmvc {width: 80%; background-color: #808080;  animation: cmvc_bounce 35.5s;}
+@keyframes sql_bounce {from { width: 0em;     }to   {width: 50%; }}
+@keyframes cmvc_bounce {from { width: 0em;     }to   {width: 80%; }}
+
+/*-----------   WELCOME FOOTER   -------------*/
+.welcome_footer {height: 3.5em;background-color: #4920ac;box-shadow: 0 1px 11px 0 rgba(0, 0, 0, 0.24);bottom: 0;width: 100%;position: fixed;display: grid;align-items: center;padding-left: 2em;color: white;font-family: 'Architects Daughter', cursive;}
+
+/*-----------   Media Query   -------------*/
+@media (max-width: 1580px)
+  {
+  .body_content .body_div { border: 1px solid white; margin: auto; width: 90%; position: relative; overflow: hidden;}
+  }
+
+@media (max-width: 480px) 
+  {
+  .welcome h1{font-size: 1em;font-family: 'Architects Daughter', cursive;}
+  .welcome h2 {margin-top: 4em;}
+  .welcome_content button {margin-left: 35%;height: 3em;width: 31%;}
+  }

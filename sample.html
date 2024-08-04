@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon"  href="/img/gradpics.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/samples.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/samples index.css">
+</head>
+<body>
+    <div class="loadingscreen">
+        <div class="welcome">
+            <div>
+                <span id="splash-overlay" class="splash"></span>
+                <span id="welcome" class="z-depth-4"></span>
+            </div>
+        <div class="welcome_header">
+        <ul>
+            <li><i class="fab fa-github"></i></li>
+            <li><i class="fas fa-envelope"></i></li>
+            <li><i class="fab fa-skype"></i></li>
+        </ul>
+        </div>
+        <div class="welcome_content">
+            <h1>Full Stack Web Developer</h1>
+            <div class="desk">
+               <p>Hi, I'm Jay. I design & build user interfaces. <i class="fas fa-smile"></i></p>
+            </div>
+                <div class="body_content">
+                    <div class="body_div ">
+                        <div class="left">
+                            Jomarie Jay T. Batingal
+                            <p>User persona</p>
+                            <p class="about">ABOUT</p>
+                          <p class="details"> Location: Suba Panas Masulog,Lapu-Lapu City. </p> 
+                          <p class="details"> Gender: Male </p> 
+                          <p class="details"> Age: 27 </p> 
+                          <p class="details"> Status: Single </p> 
+                          <p class="details"> Profession: Web Developer </p> 
+                          <p class="about">GOALS</p>
+                          <p class="details"> To automate all processes at work.</p> 
+                          <p class="details"> Gender: Male </p> 
+                          <p class="details"> Age: 27 </p> 
+                          <p class="details"> Status: Single </p> 
+                          <p class="details"> Profession: Web Developer </p> 
+                        </div>
+                        <div class="center">
+                            <p class="personality">EXPERTISE IN</p>
+                            <p class="details"> 
+                                SQL Server
+                                <div class="loadcontainer">
+                                <div class="loadskills sql">50%</div>
+                                </div>    
+                            </p> 
+                           
+                            <p class="details"> 
+                                C# Mvc
+                                <div class="loadcontainer">
+                                <div class="loadskills cmvc">80%</div>
+                                </div>    
+                            </p> 
+                            <p class="details"> 
+                                C# API
+                                <div class="loadcontainer">
+                                <div class="loadskills cmvc">80%</div>
+                                </div>    
+                            </p> 
+                            <p class="details"> 
+                                C++
+                                <div class="loadcontainer">
+                                <div class="loadskills social">50%</div>
+                                </div>    
+                            </p> 
+                            <p class="details"> 
+                                MYSQL
+                                <div class="loadcontainer">
+                                <div class="loadskills social">50%</div>
+                                </div>    
+                            </p> 
+                            <p class="details"> 
+                                PHP
+                                <div class="loadcontainer">
+                                <div class="loadskills social">50%</div>
+                                </div>    
+                            </p> 
+                            <p class="details"> 
+                                Vue
+                                <div class="loadcontainer">
+                                <div class="loadskills social">50%</div>
+                                </div>    
+                            </p> 
+                            <p class="details"> 
+                                React
+                                <div class="loadcontainer">
+                                <div class="loadskills social">50%</div>
+                                </div>    
+                            </p> 
+                            <p class="details"> 
+                                Wordpress
+                                <div class="loadcontainer">
+                                <div class="loadskills social">50%</div>
+                                </div>    
+                            </p> 
+                            <p class="viewportfolio" onclick="welcomescreen()">View Works</p>
+                        </div>
+                        <div class="right" id="right"> <img src="/img/prof_image.jpg" alt="" data-original="prof_image.jpg">
+                            <img src="" alt="" class="full-img" data-original="background.jpg">
+                        </div> 
+                    </div>
+            </div>
+           
+           <!-- <hr> -->
+             
+        </div>
+        
+        <div class="welcome_footer">
+            @2020
+            <!-- Hi, I'm Jay. I design & build user interfaces. -->
+            </div>
+</div>
+</div>
+  </body>
+</html>
+<script>
+
+    const modal = document.querySelector('.modal');
+    const previews = document.querySelectorAll('#right img');
+    const original = document.querySelector('.full-img');
+    const imgText = document.querySelector('.caption');
+
+console.log(previews);
+    
+    let rownum= 0;
+
+    let selectedimg ='';
+    let selectednumImg = 0;
+    let img_letter = ''; 
+    
+
+    let totalimg = 0;
+    previews.forEach(preview => {
+        preview.addEventListener('click', () => {
+
+         
+
+         
+            const originalSrc = preview.getAttribute('data-original');
+            original.src = 'img/'+ originalSrc;
+        })
+    })
+
+</script>
