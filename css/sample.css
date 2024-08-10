@@ -78,6 +78,7 @@ button {opacity: 0;animation: moveInbutton 2s 3.1s ease forwards;}
 .lreact{width: 80%; background-color: #4CAF50;  animation: lreact_bounce 35.5s;}
 .lreactNative {width: 70%; background-color: #2196F3;  animation: lreactNative_bounce 35.5s;}
 .lwordpress{width: 65%; background-color: #2196F3;  animation: lwordpress_bounce 35.5s;}
+.lkotlin{width: 50%; background-color: #808080;  animation: lkotlin_bounce 35.5s;}
 @keyframes lsql_bounce {from { width: 0em;     }to   {width: 80%; }}
 @keyframes lcmvc_bounce {from { width: 0em;     }to   {width: 65%; }}
 @keyframes lcapi_bounce {from { width: 0em;     }to   {width: 60%; }}
@@ -88,6 +89,7 @@ button {opacity: 0;animation: moveInbutton 2s 3.1s ease forwards;}
 @keyframes lreact_bounce {from { width: 0em;     }to   {width: 80%; }}
 @keyframes lreactNative_bounce {from { width: 0em;     }to   {width: 70%; }}
 @keyframes lwordpress_bounce {from { width: 0em;     }to   {width: 65%; }}
+@keyframes lkotlin_bounce {from { width: 0em;     }to   {width: 50%; }}
 
 /*-----------   WELCOME FOOTER   -------------*/
 .welcome_footer {height: 3.5em;background-color: #4920ac;box-shadow: 0 1px 11px 0 rgba(0, 0, 0, 0.24);bottom: 0;width: 100%;position: fixed;display: grid;align-items: center;justify-content: center;padding-left: 2em;color: white;font-family: 'Architects Daughter', cursive;}
